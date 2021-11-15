@@ -1,6 +1,7 @@
 import time
 import logging
 from web3 import Web3
+from web3.auto.infura import w3
 from utils import load_abi
 from constant import BSC, Tokens
 from utils import send_telegram_notice
@@ -16,22 +17,32 @@ if __name__ == '__main__':
     logging.getLogger().setLevel(logging.INFO)
     logging.getLogger()
 
-    w3 = Web3(Web3.HTTPProvider(BSC))
-    logging.info(w3.isConnected())
+    bsc_w3 = Web3(Web3.HTTPProvider(BSC))
+    logging.info(f"bsc: {bsc_w3.isConnected()}")
+    logging.info(f"eth: {w3.isConnected()}")
 
     spender = Web3.toChecksumAddress("0x7D57B8B8A731Cc1fc1E661842790e1864d5Cf4E8")
 
     erc20_abi = load_abi("erc20.json")
+    check_list = (
+        (Tokens.HE, "HE", "bsc"),
+        (Tokens.NFTD, "NFTD", "bsc"),
+        (Tokens.YIN, "YIN", "eth")
+    )
 
     while True:
         send_flag = False
 
-        for addr, token in ((Tokens.HE, "HE"), (Tokens.NFTD, "NFTD"), (Tokens.YIN, "YIN")):
-            contract = w3.eth.contract(address=addr, abi=erc20_abi)
+        for addr, token, network in check_list:
+            kwargs = {"address": addr, "abi": erc20_abi}
+            if network == "bsc":
+                contract = bsc_w3.eth.contract(**kwargs)
+            else:
+                contract = w3.eth.contract(**kwargs)
             balance = contract.functions.balanceOf(spender).call()
-            logging.info(f"{token} balance: {Web3.fromWei(balance, 'ether')}")
+            logging.info(f"{token} balance({network}): {Web3.fromWei(balance, 'ether')}")
             if balance > 0:
-                msg = f"{token} balance: {Web3.fromWei(balance, 'ether')}"
+                msg = f"{token} balance({network}): {Web3.fromWei(balance, 'ether')}"
                 send_telegram_notice(msg)
                 send_flag = True
 
