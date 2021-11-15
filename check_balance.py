@@ -26,7 +26,7 @@ if __name__ == '__main__':
     while True:
         send_flag = False
 
-        for addr, token in ((Tokens.HE, "HE"), (Tokens.NFTD, "NFTD")):
+        for addr, token in ((Tokens.HE, "HE"), (Tokens.NFTD, "NFTD"), (Tokens.YIN, "YIN")):
             contract = w3.eth.contract(address=addr, abi=erc20_abi)
             balance = contract.functions.balanceOf(spender).call()
             logging.info(f"{token} balance: {Web3.fromWei(balance, 'ether')}")
