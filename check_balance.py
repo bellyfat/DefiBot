@@ -51,7 +51,7 @@ if __name__ == '__main__':
         if send_flag:
             time.sleep(60 * 60)
         else:
-            time.sleep(60)
+            time.sleep(15)
 
 
 
