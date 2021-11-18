@@ -27,7 +27,9 @@ if __name__ == '__main__':
     check_list = (
         (Tokens.HE, "HE", "bsc"),
         (Tokens.NFTD, "NFTD", "bsc"),
-        (Tokens.YIN, "YIN", "eth")
+        (Tokens.YIN, "YIN", "eth"),
+        (Tokens.NUM_BSC, "NUM", "bsc"),
+        (Tokens.NUM_ETH, "NUM", "eth"),
     )
 
     while True:
