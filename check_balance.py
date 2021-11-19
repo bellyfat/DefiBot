@@ -28,8 +28,7 @@ if __name__ == '__main__':
         (Tokens.HE, "HE", "bsc"),
         (Tokens.NFTD, "NFTD", "bsc"),
         (Tokens.YIN, "YIN", "eth"),
-        (Tokens.NUM_BSC, "NUM", "bsc"),
-        (Tokens.NUM_ETH, "NUM", "eth"),
+        (Tokens.NUM, "NUM", "bsc"),
     )
 
     while True:
@@ -51,7 +50,7 @@ if __name__ == '__main__':
         if send_flag:
             time.sleep(60 * 60)
         else:
-            time.sleep(15)
+            time.sleep(30)
 
 
 

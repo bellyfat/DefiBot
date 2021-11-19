@@ -10,8 +10,7 @@ class Tokens:
     NFTD = "0xac83271abb4ec95386f08ad2b904a46c61777cef"
     BUSD = "0xe9e7cea3dedca5984780bafc599bd69add087d56"
     YIN = "0x794Baab6b878467F93EF17e2f2851ce04E3E34C8"
-    NUM_BSC = "0xeceb87cf00dcbf2d4e2880223743ff087a995ad9"
-    NUM_ETH = "0x3496b523e5c00a4b4150d6721320cddb234c3079"
+    NUM = "0xeceb87cf00dcbf2d4e2880223743ff087a995ad9"
 
 
 for attr in dir(Tokens):
