@@ -3,6 +3,7 @@ from web3 import Web3
 
 
 BSC = "https://bsc-dataseed.binance.org/"
+CELO = "https://forno.celo.org"
 
 
 class Tokens:
@@ -11,6 +12,7 @@ class Tokens:
     BUSD = "0xe9e7cea3dedca5984780bafc599bd69add087d56"
     YIN = "0x794Baab6b878467F93EF17e2f2851ce04E3E34C8"
     NUM = "0xeceb87cf00dcbf2d4e2880223743ff087a995ad9"
+    SOURCE = "0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe"
 
 
 for attr in dir(Tokens):

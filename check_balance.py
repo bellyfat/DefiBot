@@ -3,7 +3,7 @@ import logging
 from web3 import Web3
 from web3.auto.infura import w3
 from utils import load_abi
-from constant import BSC, Tokens
+from constant import BSC, CELO, Tokens
 from utils import send_telegram_notice
 
 
@@ -18,7 +18,9 @@ if __name__ == '__main__':
     logging.getLogger()
 
     bsc_w3 = Web3(Web3.HTTPProvider(BSC))
+    celo_w3 = Web3(Web3.HTTPProvider(CELO))
     logging.info(f"bsc: {bsc_w3.isConnected()}")
+    logging.info(f"celo: {celo_w3.isConnected()}")
     logging.info(f"eth: {w3.isConnected()}")
 
     spender = Web3.toChecksumAddress("0x7D57B8B8A731Cc1fc1E661842790e1864d5Cf4E8")
@@ -29,6 +31,7 @@ if __name__ == '__main__':
         (Tokens.NFTD, "NFTD", "bsc"),
         (Tokens.YIN, "YIN", "eth"),
         (Tokens.NUM, "NUM", "bsc"),
+        (Tokens.SOURCE, "SOURCE", "celo"),
     )
 
     while True:
@@ -38,6 +41,8 @@ if __name__ == '__main__':
             kwargs = {"address": addr, "abi": erc20_abi}
             if network == "bsc":
                 contract = bsc_w3.eth.contract(**kwargs)
+            elif network == "celo":
+                contract = celo_w3.eth.contract(**kwargs)
             else:
                 contract = w3.eth.contract(**kwargs)
             balance = contract.functions.balanceOf(spender).call()
