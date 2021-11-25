@@ -13,6 +13,7 @@ class Tokens:
     YIN = "0x794Baab6b878467F93EF17e2f2851ce04E3E34C8"
     NUM = "0xeceb87cf00dcbf2d4e2880223743ff087a995ad9"
     SOURCE = "0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe"
+    BEM = "0x5306be16e6af81140aa1cc4de45aa27f657f02b2"
 
 
 for attr in dir(Tokens):

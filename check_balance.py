@@ -32,6 +32,7 @@ if __name__ == '__main__':
         (Tokens.YIN, "YIN", "eth"),
         (Tokens.NUM, "NUM", "bsc"),
         (Tokens.SOURCE, "SOURCE", "celo"),
+        (Tokens.BEM, "BEM", "bsc"),
     )
 
     while True:
