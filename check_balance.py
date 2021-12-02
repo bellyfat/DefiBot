@@ -33,7 +33,7 @@ if __name__ == '__main__':
         (Tokens.NUM, "NUM", "bsc"),
         (Tokens.SOURCE, "SOURCE", "celo"),
         (Tokens.BEM, "BEM", "bsc"),
-        (Tokens.SIS, "eth"),
+        (Tokens.SIS, "SIS", "eth"),
     )
 
     while True:
