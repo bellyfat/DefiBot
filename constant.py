@@ -15,6 +15,7 @@ class Tokens:
     SOURCE = "0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe"
     BEM = "0x5306be16e6af81140aa1cc4de45aa27f657f02b2"
     SIS = "0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9"
+    MGA = "0x03ac6ab6a9a91a0fcdec7d85b38bdfbb719ec02f"
 
 
 for attr in dir(Tokens):

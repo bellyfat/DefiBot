@@ -34,6 +34,7 @@ if __name__ == '__main__':
         (Tokens.SOURCE, "SOURCE", "celo"),
         (Tokens.BEM, "BEM", "bsc"),
         (Tokens.SIS, "SIS", "eth"),
+        (Tokens.MGA, "MGA", "bsc"),
     )
 
     while True:
