@@ -4,6 +4,7 @@ from web3 import Web3
 
 BSC = "https://bsc-dataseed.binance.org/"
 CELO = "https://forno.celo.org"
+POLYGON = "https://rpc-mainnet.matic.quiknode.pro"
 
 
 class Tokens:
