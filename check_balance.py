@@ -3,7 +3,7 @@ import logging
 from web3 import Web3
 from web3.auto.infura import w3
 from utils import load_abi
-from constant import BSC, CELO, POLYGON, Tokens
+from constant import BSC, CELO, POLYGON, Tokens, SPENDER_ADDRESS
 from utils import send_telegram_notice
 
 
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     logging.info(f"polygon: {polygon_w3.isConnected()}")
     logging.info(f"eth: {w3.isConnected()}")
 
-    spender = Web3.toChecksumAddress("0x7D57B8B8A731Cc1fc1E661842790e1864d5Cf4E8")
+    spender = Web3.toChecksumAddress(SPENDER_ADDRESS)
 
     erc20_abi = load_abi("erc20.json")
     check_list = (
@@ -37,6 +37,7 @@ if __name__ == '__main__':
         (Tokens.BEM, "BEM", "bsc"),
         (Tokens.SIS, "SIS", "eth"),
         (Tokens.MGA, "MGA", "bsc"),
+        (Tokens.BLOCK, "BLOCK", "bsc"),
     )
 
     while True:

@@ -6,6 +6,9 @@ BSC = "https://bsc-dataseed.binance.org/"
 CELO = "https://forno.celo.org"
 POLYGON = "https://rpc-mainnet.matic.quiknode.pro"
 
+# Spender Address
+SPENDER_ADDRESS = os.environ['spender_address']
+
 
 class Tokens:
     HE = "0x20d39a5130f799b95b55a930e5b7ebc589ea9ed8"
@@ -17,6 +20,7 @@ class Tokens:
     BEM = "0x5306be16e6af81140aa1cc4de45aa27f657f02b2"
     SIS = "0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9"
     MGA = "0x03ac6ab6a9a91a0fcdec7d85b38bdfbb719ec02f"
+    BLOCK = "0xbc7a566b85ef73f935e640a06b5a8b031cd975df"
 
 
 for attr in dir(Tokens):
