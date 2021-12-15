@@ -21,6 +21,7 @@ class Tokens:
     SIS = "0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9"
     MGA = "0x03ac6ab6a9a91a0fcdec7d85b38bdfbb719ec02f"
     BLOCK = "0xbc7a566b85ef73f935e640a06b5a8b031cd975df"
+    ONE_SOL = "0x009178997aff09a67d4caccfeb897fb79d036214"
 
 
 for attr in dir(Tokens):
