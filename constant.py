@@ -23,6 +23,7 @@ class Tokens:
     BLOCK = "0xbc7a566b85ef73f935e640a06b5a8b031cd975df"
     ONE_SOL = "0x009178997aff09a67d4caccfeb897fb79d036214"
     MSU = "0xe8377a076adabb3f9838afb77bee96eac101ffb1"
+    MGOD = "0x10A12969cB08a8d88D4BFB5d1FA317d41e0fdab3"
 
 
 for attr in dir(Tokens):
