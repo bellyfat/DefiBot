@@ -24,6 +24,7 @@ class Tokens:
     ONE_SOL = "0x009178997aff09a67d4caccfeb897fb79d036214"
     MSU = "0xe8377a076adabb3f9838afb77bee96eac101ffb1"
     MGOD = "0x10A12969cB08a8d88D4BFB5d1FA317d41e0fdab3"
+    WAM = "0xebbaeff6217d22e7744394061d874015709b8141"
 
 
 for attr in dir(Tokens):

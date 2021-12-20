@@ -41,6 +41,7 @@ if __name__ == '__main__':
         (Tokens.ONE_SOL, "1SOL", "eth"),
         (Tokens.MSU, "MSU", "polygon"),
         (Tokens.MGOD, "MGOD", "bsc"),
+        (Tokens.WAM, "WAM", "bsc"),
     )
 
     while True:
