@@ -5,17 +5,11 @@ from web3.auto.infura import w3
 from utils import load_abi
 from constant import BSC, CELO, POLYGON, Tokens, SPENDER_ADDRESS
 from utils import send_telegram_notice
+from log_config import config_logging
 
 
 if __name__ == '__main__':
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s.%(msecs)03d (%(levelname)s): %(message)s",
-        datefmt="%y-%m-%d %H:%M:%S"
-    )
-
-    logging.getLogger().setLevel(logging.INFO)
-    logging.getLogger()
+    config_logging()
 
     bsc_w3 = Web3(Web3.HTTPProvider(BSC))
     celo_w3 = Web3(Web3.HTTPProvider(CELO))

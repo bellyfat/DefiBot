@@ -5,6 +5,7 @@ from web3 import Web3
 BSC = "https://bsc-dataseed.binance.org/"
 CELO = "https://forno.celo.org"
 POLYGON = "https://rpc-mainnet.matic.quiknode.pro"
+BOBA = "https://mainnet.boba.network/"
 
 # Spender Address
 SPENDER_ADDRESS = os.environ['spender_address']
@@ -26,6 +27,7 @@ class Tokens:
     MGOD = "0x10A12969cB08a8d88D4BFB5d1FA317d41e0fdab3"
     WAM = "0xebbaeff6217d22e7744394061d874015709b8141"
     SRG = "0x722f41f6511ff7cda73a1cb0a9ea2f731738c4a0"
+    SYN = "0xb554a55358ff0382fb21f0a478c3546d1106be8c"
 
 
 for attr in dir(Tokens):
