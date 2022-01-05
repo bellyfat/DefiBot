@@ -28,6 +28,7 @@ class Tokens:
     WAM = "0xebbaeff6217d22e7744394061d874015709b8141"
     SRG = "0x722f41f6511ff7cda73a1cb0a9ea2f731738c4a0"
     SYN = "0xb554a55358ff0382fb21f0a478c3546d1106be8c"
+    F2C = "0x657b632714e08ac66b79444ad3f3875526ee6689"
 
 
 for attr in dir(Tokens):

@@ -37,6 +37,7 @@ if __name__ == '__main__':
         (Tokens.MGOD, "MGOD", "bsc"),
         (Tokens.WAM, "WAM", "bsc"),
         (Tokens.SRG, "SRG", "bsc"),
+        (Tokens.F2C, "F2C", "bsc"),
     )
 
     while True:
