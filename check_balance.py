@@ -23,28 +23,27 @@ if __name__ == '__main__':
 
     erc20_abi = load_abi("erc20.json")
     check_list = (
-        (Tokens.HE, "HE", "bsc"),
-        (Tokens.NFTD, "NFTD", "bsc"),
-        (Tokens.YIN, "YIN", "eth"),
-        (Tokens.NUM, "NUM", "bsc"),
-        (Tokens.SOURCE, "SOURCE", "celo"),
-        (Tokens.BEM, "BEM", "bsc"),
-        (Tokens.SIS, "SIS", "eth"),
-        (Tokens.MGA, "MGA", "bsc"),
-        (Tokens.BLOCK, "BLOCK", "bsc"),
-        (Tokens.ONE_SOL, "1SOL", "eth"),
-        (Tokens.MSU, "MSU", "polygon"),
-        (Tokens.MGOD, "MGOD", "bsc"),
-        (Tokens.WAM, "WAM", "bsc"),
-        (Tokens.SRG, "SRG", "bsc"),
-        (Tokens.F2C, "F2C", "bsc"),
-        (Tokens.MGG, "MGG", "bsc"),
+        (Tokens.HE, "HE", "bsc", "cost: 0.01"),
+        (Tokens.NFTD, "NFTD", "bsc", "cost: 0.1"),
+        (Tokens.YIN, "YIN", "eth", "cost: 0.3"),
+        (Tokens.NUM, "NUM", "bsc", "cost: 0.04"),
+        (Tokens.SOURCE, "SOURCE", "celo", "cost: 0.45"),
+        (Tokens.BEM, "BEM", "bsc", "cost: 0.01"),
+        (Tokens.SIS, "SIS", "eth", "cost: 0.8"),
+        (Tokens.MGA, "MGA", "bsc", ""),
+        (Tokens.ONE_SOL, "1SOL", "eth", "cost: 0.38"),
+        (Tokens.MSU, "MSU", "polygon", "cost: 0.03"),
+        (Tokens.MGOD, "MGOD", "bsc", ""),
+        (Tokens.WAM, "WAM", "bsc", ""),
+        (Tokens.SRG, "SRG", "bsc", "cost: 0.08"),
+        (Tokens.F2C, "F2C", "bsc", "cost: 0.022"),
+        (Tokens.MGG, "MGG", "bsc", "cost: 0.08"),
     )
 
     while True:
         send_flag = False
 
-        for addr, token, network in check_list:
+        for addr, token, network, remark in check_list:
             kwargs = {"address": addr, "abi": erc20_abi}
             if network == "bsc":
                 contract = bsc_w3.eth.contract(**kwargs)
@@ -57,7 +56,7 @@ if __name__ == '__main__':
             balance = contract.functions.balanceOf(spender).call()
             logging.info(f"{token} balance({network}): {Web3.fromWei(balance, 'ether')}")
             if balance > 0:
-                msg = f"{token} balance({network}): {Web3.fromWei(balance, 'ether')}"
+                msg = f"{token} balance({network}): {Web3.fromWei(balance, 'ether')} [{remark}]"
                 send_telegram_notice(msg)
                 send_flag = True
 
