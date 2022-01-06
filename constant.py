@@ -29,6 +29,7 @@ class Tokens:
     SRG = "0x722f41f6511ff7cda73a1cb0a9ea2f731738c4a0"
     SYN = "0xb554a55358ff0382fb21f0a478c3546d1106be8c"
     F2C = "0x657b632714e08ac66b79444ad3f3875526ee6689"
+    MGG = "0x6125adcab2f171bc70cfe2caecfec5509273a86a"
 
 
 for attr in dir(Tokens):
