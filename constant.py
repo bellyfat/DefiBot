@@ -35,8 +35,11 @@ class Tokens:
 
 
 for attr in dir(Tokens):
-    if not attr.startswith('_'):
-        setattr(Tokens, attr, Web3.toChecksumAddress(getattr(Tokens, attr)))
+    if attr and not attr.startswith('_'):
+        try:
+            setattr(Tokens, attr, Web3.toChecksumAddress(getattr(Tokens, attr)))
+        except ValueError:
+            pass
 
 # telegram
 TELEGRAM_CHAT_ID = "581220685"
