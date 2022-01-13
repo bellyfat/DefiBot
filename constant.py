@@ -30,6 +30,8 @@ class Tokens:
     SYN = "0xb554a55358ff0382fb21f0a478c3546d1106be8c"
     F2C = "0x657b632714e08ac66b79444ad3f3875526ee6689"
     MGG = "0x6125adcab2f171bc70cfe2caecfec5509273a86a"
+    ISKY = "0x5DFD5edFde4d8EC9e632dCA9d09Fc7E833f74210"
+    BBS = ""
 
 
 for attr in dir(Tokens):

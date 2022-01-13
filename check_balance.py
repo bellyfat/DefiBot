@@ -30,14 +30,16 @@ if __name__ == '__main__':
         (Tokens.SOURCE, "SOURCE", "celo", "cost: 0.45"),
         (Tokens.BEM, "BEM", "bsc", "cost: 0.01"),
         (Tokens.SIS, "SIS", "eth", "cost: 0.8"),
-        (Tokens.MGA, "MGA", "bsc", ""),
+        (Tokens.MGA, "MGA", "bsc", "cost: 0.7"),
         (Tokens.ONE_SOL, "1SOL", "eth", "cost: 0.38"),
         (Tokens.MSU, "MSU", "polygon", "cost: 0.03"),
-        (Tokens.MGOD, "MGOD", "bsc", ""),
-        (Tokens.WAM, "WAM", "bsc", ""),
+        (Tokens.MGOD, "MGOD", "bsc", "cost: 0.045"),
+        (Tokens.WAM, "WAM", "bsc", "cost: 0.02"),
         (Tokens.SRG, "SRG", "bsc", "cost: 0.08"),
         (Tokens.F2C, "F2C", "bsc", "cost: 0.022"),
         (Tokens.MGG, "MGG", "bsc", "cost: 0.08"),
+        (Tokens.ISKY, "ISKY", "polygon", "cost: 0.22"),
+        # (Tokens.BBS, "BBS", "eth", "cost: 0.04"),
     )
 
     while True:
