@@ -32,6 +32,8 @@ class Tokens:
     MGG = "0x6125adcab2f171bc70cfe2caecfec5509273a86a"
     ISKY = "0x5DFD5edFde4d8EC9e632dCA9d09Fc7E833f74210"
     BBS = ""
+    SPELL_ETH = "0x3A0b022f32b3191D44E5847da12dc0B63fb07C91"
+    SPELL_BSC = "0xd6F28f15A5CaFc8d29556393c08177124B88de0D"
 
 
 for attr in dir(Tokens):

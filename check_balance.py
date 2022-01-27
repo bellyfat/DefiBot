@@ -40,6 +40,8 @@ if __name__ == '__main__':
         (Tokens.MGG, "MGG", "bsc", "cost: 0.08"),
         (Tokens.ISKY, "ISKY", "polygon", "cost: 0.22"),
         # (Tokens.BBS, "BBS", "eth", "cost: 0.04"),
+        (Tokens.SPELL_BSC, "SPELL", "bsc", "cost: 0.025"),
+        (Tokens.SPELL_ETH, "SPELL", "eth", "cost: 0.025"),
     )
 
     while True:
