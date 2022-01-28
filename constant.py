@@ -21,7 +21,6 @@ class Tokens:
     BEM = "0x5306be16e6af81140aa1cc4de45aa27f657f02b2"
     SIS = "0xd38bb40815d2b0c2d2c866e0c72c5728ffc76dd9"
     MGA = "0x03ac6ab6a9a91a0fcdec7d85b38bdfbb719ec02f"
-    BLOCK = "0xbc7a566b85ef73f935e640a06b5a8b031cd975df"
     ONE_SOL = "0x009178997aff09a67d4caccfeb897fb79d036214"
     MSU = "0xe8377a076adabb3f9838afb77bee96eac101ffb1"
     MGOD = "0x10A12969cB08a8d88D4BFB5d1FA317d41e0fdab3"
@@ -34,6 +33,17 @@ class Tokens:
     BBS = ""
     SPELL_ETH = "0x3A0b022f32b3191D44E5847da12dc0B63fb07C91"
     SPELL_BSC = "0xd6F28f15A5CaFc8d29556393c08177124B88de0D"
+    CWAR = "Grh8kDcfWYayPvRXDyHiQAZyWsJNME3PH6USq11RKWmt"
+    BLOCK = "GjJHwUTJkEyo7xGeYP1AZj25J5uCH1nq33eDkYtoRueA"
+    UNQ = "BFzJuwJXfkriCmiDMskaAnn72msz7aCkKXYzAqgeQNWd"
+    MEAN = "HnUBqSg5WAXbD1kxNVHZZUHVErYEAS4yx11AzpGLCsT9"
+    GWT = "5s7fx9jivWv61gV2EYZX4Ro7xs1zfXfmwx9zC2pZQMgf"
+    SCY = "BXZ8MXFFq3stVyyWwF19SoCEcM3JNfKXavcQ2TFPjwb5"
+    SLC = "7ppbmE3BD8RASX8e5Ch1irHhYivKtpckLQj7bV3TMJtz"
+    SVT = "5YwfaYSdZXnTUMuexRN9M6jkXfNBNxC1QTkAAaRKSMbE"
+    NOS = "6nqBZDTMYaWo6dqbPtD2ESAsdU9Gz63Ri8FaS3qcX4u5"
+    CMFI = "FbuuEHgZFhe4tbzHyyv4UwLpgiqKAJiDrE6UYfcfnnGv"
+    HBB = "9wSfeMH1qxfFBNT1Ldev2qvwf97BKJeK8LtACBZVQ7YK"
 
 
 for attr in dir(Tokens):
