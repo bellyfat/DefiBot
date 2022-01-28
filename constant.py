@@ -43,7 +43,7 @@ class Tokens:
     SVT = "5YwfaYSdZXnTUMuexRN9M6jkXfNBNxC1QTkAAaRKSMbE"
     NOS = "6nqBZDTMYaWo6dqbPtD2ESAsdU9Gz63Ri8FaS3qcX4u5"
     CMFI = "FbuuEHgZFhe4tbzHyyv4UwLpgiqKAJiDrE6UYfcfnnGv"
-    HBB = "9wSfeMH1qxfFBNT1Ldev2qvwf97BKJeK8LtACBZVQ7YK"
+    HBB = "NJvtLZSWy8zmeQ9m9a7Yi8zdUCrYbsnieLYjDyPC9Lh"
 
 
 for attr in dir(Tokens):
