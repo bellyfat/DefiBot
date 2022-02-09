@@ -44,6 +44,7 @@ class Tokens:
     NOS = "6nqBZDTMYaWo6dqbPtD2ESAsdU9Gz63Ri8FaS3qcX4u5"
     CMFI = "FbuuEHgZFhe4tbzHyyv4UwLpgiqKAJiDrE6UYfcfnnGv"
     HBB = "NJvtLZSWy8zmeQ9m9a7Yi8zdUCrYbsnieLYjDyPC9Lh"
+    KT = "0x52Da44B5E584F730005daC8D2D2AcbDee44D4ba3"
 
 
 for attr in dir(Tokens):

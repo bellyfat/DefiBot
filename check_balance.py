@@ -55,6 +55,7 @@ if __name__ == '__main__':
         (Tokens.NOS, "NOS", "solana", "cost: 0.1"),
         (Tokens.CMFI, "CMFI", "solana", "cost: 0.08"),
         (Tokens.HBB, "HBB", "solana", "cost: 1"),
+        (Tokens.KT, "KT", "bsc", "cost: 0.012"),
     )
 
     while True:
